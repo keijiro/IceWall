@@ -186,16 +186,16 @@ MonoBehaviour:
   _rows: 100
   _extent: {x: 100, y: 100}
   _offset: {x: 0, y: 0}
-  _noiseFrequency: .109999999
+  _noiseFrequency: .100000001
   _noiseDepth: 5
   _noiseClampMin: -1
   _noiseClampMax: 1
   _noiseElevation: 1.60000002
-  _noiseWarp: .150000006
+  _noiseWarp: .600000024
   _material: {fileID: 2100000, guid: 6929cf4f373389a4fb6dd18e4e1dd43a, type: 2}
-  _castShadows: 0
-  _receiveShadows: 0
-  _lineColor: {r: .963235319, g: .141652271, b: .141652271, a: .063000001}
+  _castShadows: 1
+  _receiveShadows: 1
+  _lineColor: {r: 0, g: 0, b: 0, a: .310000002}
   _debug: 0
   _kernelShader: {fileID: 4800000, guid: cc0a7661a4d054189b5c00584b5c766a, type: 3}
   _lineShader: {fileID: 4800000, guid: a85ea180ea86a4e4880dd86148362ee6, type: 3}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _yawAngle: 40
-  _speed: 2
+  _speed: 1.29999995
 --- !u!1 &928320832
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,8 +260,8 @@ Light:
     m_Type: 0
     m_Resolution: -1
     m_Strength: 1
-    m_Bias: .0500000007
-    m_NormalBias: .400000006
+    m_Bias: 0
+    m_NormalBias: 0
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
@@ -280,7 +280,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 928320832}
-  m_LocalRotation: {x: -.015134464, y: .981060266, z: -.172987431, w: -.0858317986}
+  m_LocalRotation: {x: -.0247536134, y: .955171108, z: -.282934606, w: -.0835667849}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -317,6 +317,7 @@ GameObject:
   - 92: {fileID: 1402646088}
   - 124: {fileID: 1402646087}
   - 81: {fileID: 1402646086}
+  - 114: {fileID: 1402646091}
   - 114: {fileID: 1402646093}
   - 114: {fileID: 1402646096}
   m_Layer: 0
@@ -372,7 +373,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: 1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -393,13 +394,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2024380138}
   m_RootOrder: 0
+--- !u!114 &1402646091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1402646085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6a516d891854931acf7fb785c812ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _intensity: 8
+  _sampleRadius: 2
+  _rangeCheck: 1
+  _fallOffDistance: 100
+  _sampleCount: 2
+  _shader: {fileID: 4800000, guid: c928e16c12e994a70928a9181450d18c, type: 3}
 --- !u!114 &1402646093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1402646085}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10593b7d510b64560a297a8af1356dcb, type: 3}
   m_Name: 
@@ -407,7 +425,7 @@ MonoBehaviour:
   _colorTemp: .119999997
   _colorTint: 0
   _toneMapping: 1
-  _exposure: 1.29999995
+  _exposure: .569999993
   _saturation: 1
   _rCurve:
     serializedVersion: 2
@@ -483,9 +501,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color1: {r: 0, g: 0, b: 1, a: 1}
-  _color2: {r: 1, g: 0, b: 0, a: 1}
+  _color2: {r: 0, g: 1, b: .00689649582, a: 1}
   _angle: 90
-  _opacity: .129999995
+  _opacity: .100000001
   _blendMode: 2
   _debug: 0
   _shader: {fileID: 4800000, guid: 0eccb83e08c1a4981813863cbdebc044, type: 3}
@@ -510,7 +528,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1886007084}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+  m_LocalRotation: {x: .57357651, y: 0, z: 0, w: .819151998}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

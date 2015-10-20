@@ -45,7 +45,14 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ParallaxMap
+          name: _PositionBuffer
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _RotationBuffer
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -53,6 +60,13 @@ Material:
       data:
         first:
           name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -85,20 +99,6 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _PositionBuffer
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _RotationBuffer
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -115,6 +115,34 @@ Material:
       data:
         first:
           name: _Smoothness
+        second: 0
+      data:
+        first:
+          name: _ColorMode
+        second: 0
+      data:
+        first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
+          name: _NormalScale
+        second: 1
+      data:
+        first:
+          name: _OcclusionStr
+        second: 1
+      data:
+        first:
+          name: _ScaleMin
+        second: 1
+      data:
+        first:
+          name: _ScaleMax
+        second: 1
+      data:
+        first:
+          name: _RandomSeed
         second: 0
       data:
         first:
@@ -148,34 +176,6 @@ Material:
         first:
           name: _Mode
         second: 0
-      data:
-        first:
-          name: _Metallic
-        second: 0
-      data:
-        first:
-          name: _ColorMode
-        second: 0
-      data:
-        first:
-          name: _NormalScale
-        second: 1
-      data:
-        first:
-          name: _OcclusionStr
-        second: 1
-      data:
-        first:
-          name: _ScaleMin
-        second: 1
-      data:
-        first:
-          name: _ScaleMax
-        second: 1
-      data:
-        first:
-          name: _RandomSeed
-        second: 0
     m_Colors:
       data:
         first:
@@ -192,4 +192,4 @@ Material:
       data:
         first:
           name: _Emission
-        second: {r: .286764681, g: .0253027733, b: .0253027733, a: 1}
+        second: {r: .188419104, g: .250012666, b: .301470578, a: 1}

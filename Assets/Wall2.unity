@@ -191,7 +191,7 @@ MonoBehaviour:
   _noiseClampMin: -1
   _noiseClampMax: 1
   _noiseElevation: 1.60000002
-  _noiseWarp: .200000003
+  _noiseWarp: .5
   _material: {fileID: 2100000, guid: 6929cf4f373389a4fb6dd18e4e1dd43a, type: 2}
   _castShadows: 0
   _receiveShadows: 0
