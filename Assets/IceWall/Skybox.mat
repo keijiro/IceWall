@@ -137,7 +137,7 @@ Material:
       data:
         first:
           name: _Exposure
-        second: 1.39999998
+        second: .5
       data:
         first:
           name: _Rotation
@@ -154,4 +154,4 @@ Material:
       data:
         first:
           name: _Tint
-        second: {r: .5, g: .5, b: .5, a: .5}
+        second: {r: .500011325, g: .567525864, b: .678004205, a: .5}

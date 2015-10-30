@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 769393073}
   - 114: {fileID: 769393072}
+  - 114: {fileID: 769393074}
   m_Layer: 0
   m_Name: Lattice
   m_TagString: Untagged
@@ -114,18 +115,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _columns: 100
   _rows: 100
-  _extent: {x: 50, y: 50}
+  _extent: {x: 100, y: 100}
   _offset: {x: 0, y: 0}
-  _noiseFrequency: .300000012
-  _noiseDepth: 3
+  _noiseFrequency: .150000006
+  _noiseDepth: 5
   _noiseClampMin: -1
   _noiseClampMax: 1
-  _noiseElevation: 1
-  _noiseWarp: 0
+  _noiseElevation: 1.5
+  _noiseWarp: .600000024
   _material: {fileID: 2100000, guid: e880105a9a54c69438b6b0184a66e8b8, type: 2}
   _castShadows: 0
   _receiveShadows: 0
-  _lineColor: {r: .904411733, g: .139651835, b: .139651835, a: .0769999996}
+  _lineColor: {r: 1, g: 0, b: 0, a: .0500000007}
   _debug: 0
   _kernelShader: {fileID: 4800000, guid: cc0a7661a4d054189b5c00584b5c766a, type: 3}
   _lineShader: {fileID: 4800000, guid: a85ea180ea86a4e4880dd86148362ee6, type: 3}
@@ -142,6 +143,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &769393074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 769393071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d597f793e3df148ad93a8dd5326a0e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _yawAngle: -90
+  _speed: 10
 --- !u!1 &920376697
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,8 +237,96 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 920376697}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2064540356}
+  m_RootOrder: 0
+--- !u!1 &1066006133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1066006135}
+  - 108: {fileID: 1066006134}
+  m_Layer: 0
+  m_Name: Directional light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1066006134
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1066006133}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1.39999998
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &1066006135
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1066006133}
+  m_LocalRotation: {x: .994206548, y: -.00324686943, z: .0314177535, w: .102741256}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!1 &2064540355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2064540356}
+  m_Layer: 0
+  m_Name: Camera Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2064540356
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2064540355}
+  m_LocalRotation: {x: .112583093, y: -.103856549, z: .0118329599, w: .98812902}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 920376702}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
