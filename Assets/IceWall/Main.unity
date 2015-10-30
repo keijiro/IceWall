@@ -95,6 +95,7 @@ GameObject:
   - 4: {fileID: 769393073}
   - 114: {fileID: 769393072}
   - 114: {fileID: 769393074}
+  - 114: {fileID: 769393075}
   m_Layer: 0
   m_Name: Lattice
   m_TagString: Untagged
@@ -123,6 +124,7 @@ MonoBehaviour:
   _noiseClampMax: 1
   _noiseElevation: 1.5
   _noiseWarp: .600000024
+  _noiseOffset: {x: 0, y: 0}
   _material: {fileID: 2100000, guid: e880105a9a54c69438b6b0184a66e8b8, type: 2}
   _castShadows: 0
   _receiveShadows: 0
@@ -155,7 +157,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _yawAngle: -90
-  _speed: 10
+  _speed: 4
+--- !u!114 &769393075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 769393071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec22b90bcdd2e04a968016815678c77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _yawAngle: 100
+  _speed: 1
 --- !u!1 &920376697
 GameObject:
   m_ObjectHideFlags: 0
